@@ -1,0 +1,35 @@
+.quote-circle {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.quote-mark {
+    position: absolute;
+    font-size: 4rem;
+    color: #1e40af;
+    opacity: 0.2;
+}
+
+.quote-mark.left {
+    top: 1rem;
+    left: 1rem;
+}
+
+.quote-mark.right {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+@media (max-width: 640px) {
+    .quote-circle {
+        aspect-ratio: auto;
+        border-radius: 1.5rem;
+        margin: 1rem;
+    }
+}

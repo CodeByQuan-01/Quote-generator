@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirational Quote Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+   
+</head>
+<body class="bg-gradient-to-r from-yellow-300 via-yellow-400 to-blue-400 min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="quote-circle transform transition-all duration-300 hover:scale-105">
+        <span class="quote-mark left">"</span>
+        <span class="quote-mark right">"</span>
+        <div class="h-full flex flex-col items-center justify-center text-center px-4">
+            <div id="quote-container" class="mb-6">
+                <p id="quote" class="text-xl md:text-2xl lg:text-3xl text-gray-800 font-medium mb-4 transition-opacity duration-300 ease-in-out leading-relaxed">Loading...</p>
+                <p id="author" class="text-right text-gray-600 font-semibold transition-opacity duration-300 ease-in-out"></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 w-full max-w-md px-4">
+        <button id="new-quote" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center flex-1">
+            <i class="fas fa-sync-alt mr-2"></i>
+            New Quote
+        </button>
+        <a id="tweet-quote" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 flex items-center justify-center flex-1">
+            <i class="fab fa-twitter mr-2"></i>
+            Tweet
+        </a>
+    </div>
+
+    <div class="mt-6 text-center text-gray-700 text-sm">
+        <p>Created by <span class="font-semibold">codebyquan</span></p>
+        <i class="fas fa-code text-blue-500 animate-bounce-slow mt-2"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
