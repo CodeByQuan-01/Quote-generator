@@ -5,7 +5,7 @@ const tweetQuoteLink = document.getElementById('tweet-quote');
 
 // Using the API Ninjas Quotes API
 const API_URL = 'https://api.api-ninjas.com/v1/quotes?category=success';
-const API_KEY = 'YOUR_API_NINJAS_KEY'; // Replace with your actual API key
+const API_KEY = 'mYhVVidViDtRXuXAJcHbXg==t8lc9RaKyniorG8B'; // Replace with your actual API key
 
 async function getQuote() {
     try {
